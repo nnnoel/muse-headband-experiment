@@ -1,0 +1,54 @@
+:root {
+    --bgca: #333;
+    --bgcb: #515151;
+    --bgbord: #232323;
+}
+
+html {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.container {
+    display: grid;
+    margin: 20px;
+    padding: 20px;
+    grid-gap: 20px;
+    height: 100vh;
+    grid-template-areas:
+        "sensors wavelengths"
+        "binary wavelengths"
+        "eeg wavelengths";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.container h4 {
+    margin: 10.920px 10.920px 10.920px 10.920px;
+    // font-size: 1em;
+    font-size: 2.8vw;
+    font-size: 2.8vh;
+    color: white;
+}
+
+.container > * {
+    // background-color: var(--bgca);
+    background: linear-gradient(var(--bgcb), var(--bgca));
+    border: 1px solid var(--bgbord)
+}
+
+#sensors {
+    grid-area: sensors;
+    position: relative;
+}
+
+#binary {
+    grid-area: binary;
+}
+
+#eeg {
+    grid-area: eeg;
+}
+
+#wavelengths {
+    grid-area: wavelengths;
+}

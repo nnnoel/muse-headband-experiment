@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OSC WebSocket Stream</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css">
+    <body>
+        <div class="container">
+            <div id="sensors">
+                <h4>Sensors</h4>
+                <svg width="100%" height="100%">
+                    <defs>
+                        <rect id="leftEar"
+                            x="5%" y="10%"
+                            width="40" height="40"
+                            fill="#ffffe6" />
+                        <rect id="leftForehead"
+                            x="25%" y="35%"
+                            width="40" height="40"
+                            fill="#ffffe6" />
+                        <rect id="middle"
+                            x="45%" y="60%"
+                            width="40" height="40"
+                            fill="#ffffe6" />
+                        <rect id="rightForehead"
+                            x="65%" y="35%"
+                            width="40" height="40"
+                            fill="#ffffe6" />
+                        <rect id="rightEar"
+                            x="85%" y="10%"
+                            width="40" height="40"
+                            fill="#ffffe6" />
+                    </defs>
+                    <use xlink:href="#leftEar"/>
+                    <use xlink:href="#leftForehead"/>
+                    <use xlink:href="#middle"/>
+                    <use xlink:href="#rightForehead"/>
+                    <use xlink:href="#rightEar"/>
+                </svg>
+            </div>
+            <canvas width="470px" height="135px" id="binary"></canvas>
+            <canvas width="470px" height="301.453px" id="eeg"></canvas>
+            <canvas width="477.500px" height="674px" id="wavelengths"></canvas>
+        </div>
+
+        <script src="js/lib/osc/osc-browser.js"></script>
+        <script src="js/lib/smoothie/smoothie.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

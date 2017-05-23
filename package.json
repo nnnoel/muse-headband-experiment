@@ -1,0 +1,24 @@
+{
+  "name": "muse-headband-experiment",
+  "version": "0.1.0",
+  "description": "Muse headband streaming and data modeling using Muse API over OSC UDP and WebSockets",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "osc": "^2.2.0",
+    "smoothie": "^1.27.0",
+    "ws": "^2.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnnoel/muse-headband-experiment.git"
+  },
+  "author": "Noel Colon",
+  "license": "ISC",
+  "homepage": "https://github.com/nnnoel/muse-headband-experiment.git#readme"
+}
