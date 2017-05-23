@@ -19,7 +19,7 @@ Over web sockets, this web app is designed to graph live stream data and intelli
 > Ensure the headband is making complete contact with skin for good signal quality
 ### Installation
 * Having the latest version of Node is recommended
-* Providing ports for `PORT` and `UDPPort`
+* Providing ports for `PORT` and `UDPPort` are optional
  
 1. ```npm install```
 2. ``` PORT=8475 UDPPort=5001 node server ```
