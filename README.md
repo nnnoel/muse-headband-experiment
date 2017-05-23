@@ -6,11 +6,11 @@ Brain sensing headband used to model positive and negative emotional patterns.
 Any OSC data emitting server that's compatible with Muse should be able to work as an alternative to Muse Monitor.
 
 ### Introduction
-Muse is a brain sensing headband used for measuring brain states in meditation. Muse's API provides feedback for muscle movements, absolute band powers (Alpha, Beta, Thetha, etc), raw EEG data, raw FFTs (Fast Fourier Transform), and much more.
+Muse is a brain sensing headband used for measuring brain states in meditation. Muse's API provides feedback for muscle movements, absolute band powers (Alpha, Beta, Theta, etc), raw EEG and FFT data (Fast Fourier Transform), and much more.
 
 ### Purpose
 To gather positive and negative emotional feedback using the Muse API.
-Over web sockets, this web app is designed to graph live stream data and intelligently distinguish positive and negative emotions by emulating a data model described in the [e-Avatar Muse Mood Software](http://www.brainm.com/software/muse/MOOD%20MANUAL.pdf) manual (also included in repo).
+Over web sockets, this web app is designed to graph a live stream data and intelligently distinguish positive and negative emotions by emulating a data model described in the [e-Avatar Muse Mood Software](http://www.brainm.com/software/muse/MOOD%20MANUAL.pdf) manual (also included in repo).
 
 ### Instructions
 * Match your OSC server to the IP specified from the node server
